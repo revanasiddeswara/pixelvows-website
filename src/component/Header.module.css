@@ -48,6 +48,8 @@
     font-size: 1.5rem;
     color: #333;
     cursor: pointer;
+    top: 1rem; /* Adjust to align vertically */
+    right: 0.5rem;
     z-index: 1001; /* Ensure it appears above the menu */
   }
   
@@ -56,7 +58,7 @@
     .navLinks {
       position: fixed;
       top: 0;
-      right: 0;
+      right: 0rem;
       height: 100vh;
       width: 70%;
       max-width: 250px;
@@ -76,6 +78,8 @@
   
     .hamburger {
       display: block;
+      margin-left: 7.2rem !important;
+      color:#20c7ac
     }
   
     .navLinks li {

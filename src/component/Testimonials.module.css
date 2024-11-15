@@ -1,0 +1,120 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+  }
+  
+  .testimonials .heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Wrapper for content and image */
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Text Content Section */
+  .textContent {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); */
+  }
+  
+  /* Testimonials Card */
+  .testimonialCard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fadeIn 5s infinite;
+  }
+  
+  .feedback {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .position {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Image Section */
+  .imageWrapper {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .testimonialsImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonialsImage:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fading Effect Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .testimonials .heading {
+      font-size: 2rem;
+    }
+  
+    .contentWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .testimonialCard {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .imageWrapper {
+      margin-top: 20px;
+    }
+  }
+  

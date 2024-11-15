@@ -1,0 +1,172 @@
+/* HeroSection.module.css */
+
+/* Global Styles */
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background-color: #f5f7fa;
+}
+  
+.content {
+    max-width: 50%;
+}
+
+.tagline {
+    color: #20c7ac;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+  
+.title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+  
+.description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+  
+.highlight {
+    color: #20c7ac;
+    font-weight: bold;
+}
+  
+.ctaButton {
+    background-color: #20c7ac;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.ctaButton:hover {
+    background-color: #17a38c;
+}
+  
+.arrow {
+    margin-left: 0.5rem;
+}
+  
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+  
+.socialIcons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.socialIcons i:hover {
+    color: #20c7ac;
+}
+  
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.heroImage {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .heroSection {
+        padding: 2rem;
+    }
+  
+    .title {
+        font-size: 2.5rem;
+    }
+  
+    .description {
+        font-size: 1rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .tagline {
+        margin-top: 1rem; /* Reduced to improve visibility */
+    }
+
+    .content {
+        max-width: 100%;
+    }
+  
+    .title {
+        font-size: 2rem;
+    }
+  
+    .description {
+        font-size: 0.9rem;
+    }
+  
+    .ctaButton {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+  
+    .socialIcons {
+        justify-content: center;
+    }
+  
+    .heroImage {
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .heroSection {
+        padding: 1.5rem;
+        align-items: start;
+        margin-top: 4rem;
+    }
+  
+    .title {
+        font-size: 1.8rem;
+    }
+  
+    .description {
+        font-size: 0.85rem;
+    }
+  
+    .ctaButton {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+  
+    .socialIcons {
+        font-size: 1rem;
+    }
+  
+    .heroImage {
+        width: 100%;
+    }
+}
